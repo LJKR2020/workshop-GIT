@@ -35,16 +35,15 @@
 #item-e {
     grid-area: footer;
 }
-/*styling hierbuiten wordt toegepast op mobiel EN mobiel en groter*/
+/*styling hieronder wordt toegepast op tablet en groter*/
 @media screen and (min-width: 576px) {
     /*styling toegepast op GROTER dan mobiel*/
-    /*dus tablets en web en beyond*/
     .container {
         background-color: hsl(186, 34%, 77%);
         display: grid;
-        row-gap: 16px;
-        column-gap: 16px;
-        grid-template-columns: 2fr 1fr;
+        row-gap: 10px;
+        column-gap: 10px;
+        grid-template-columns: 1fr 2fr;
         grid-template-rows: 100px 70px auto 40px;
         grid-template-areas:
             "header header"
@@ -53,6 +52,3 @@
             "footer footer";
     }
 }
-/*@media screen and (min-width: 1024px) {*/
-/*    !*styling toegepast op GROTER dan tablet*!*/
-/*}*/
