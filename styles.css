@@ -1,0 +1,58 @@
+.container {
+    background-color: hsl(186, 34%, 77%);
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 70px 150px auto 50px;
+    grid-template-areas:
+            "header"
+            "menubalk"
+            "stappenplan"
+            "content"
+            "footer";
+}
+.item {
+    background-color: hsl(273, 100%, 35%);
+    border: 2px solid hsl(289, 13%, 32%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#item-a {
+    grid-area: header;
+}
+#item-b {
+    grid-area: menubalk;
+}
+#item-c {
+    grid-area: stappenplan;
+}
+#item-d {
+    grid-area: content;
+}
+#item-e {
+    grid-area: footer;
+}
+/*styling hierbuiten wordt toegepast op mobiel EN mobiel en groter*/
+@media screen and (min-width: 576px) {
+    /*styling toegepast op GROTER dan mobiel*/
+    /*dus tablets en web en beyond*/
+    .container {
+        background-color: hsl(186, 34%, 77%);
+        display: grid;
+        row-gap: 16px;
+        column-gap: 16px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100px 70px auto 40px;
+        grid-template-areas:
+            "header header"
+            "menubalk content"
+            "stappenplan content"
+            "footer footer";
+    }
+}
+/*@media screen and (min-width: 1024px) {*/
+/*    !*styling toegepast op GROTER dan tablet*!*/
+/*}*/
