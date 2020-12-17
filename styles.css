@@ -4,7 +4,7 @@
     row-gap: 16px;
     column-gap: 16px;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px 70px 150px auto 50px;
+    grid-template-rows: 100px 70px auto auto 50px;
     grid-template-areas:
             "header"
             "menubalk"
@@ -13,9 +13,9 @@
             "footer";
 }
 .item {
-    background-color: hsl(273, 100%, 35%);
+    background-color: hsl(288, 72%, 86%);
     border: 2px solid hsl(289, 13%, 32%);
-    color: white;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
